@@ -7,11 +7,9 @@
     </div>
     <q-separator />
     <q-list>
-      <template v-for="(item, i) in navItems">
-        <template>
-          <menu-item v-bind:key="`menu_item_${i}`" :item="item" />
-          <q-separator v-bind:key="`menu_separator_${i}`" />
-        </template>
+      <template v-for="(item, i) in navItems" :key="i">
+        <menu-item :item="item" />
+        <q-separator />
       </template>
       <!-- Logout -->
       <q-item
