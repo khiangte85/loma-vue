@@ -12,10 +12,8 @@ function setAuth(data) {
 }
 
 async function checkAuth() {
-  const token = localStorage.getItem("token");
   try {
     const response = await api.get("/auth/user");
-    response.data.token = token;
     setAuth(response.data);
   } catch (err) {
     await logout();
