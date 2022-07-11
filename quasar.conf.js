@@ -47,8 +47,8 @@ module.exports = configure(function (ctx) {
 
       env: {
         API_URL: ctx.dev
-          ? "http://127.0.0.1:8000/api"
-          : "http://127.0.0.1:8000/api",
+          ? "http://localhost:8000/api"
+          : "http://localhost:8000/api",
       },
       // transpile: false,
       // publicPath: '/',
